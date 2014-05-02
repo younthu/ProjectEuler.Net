@@ -1,0 +1,7 @@
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\ProjectEuler.Core.Test.dll
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\ProjectEuler.Core.Test.pdb
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\ProjectEuler.Core.dll
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\ProjectEuler.Core.pdb
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\obj\Debug\ProjectEuler.Core.Test.csprojResolveAssemblyReference.cache
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\obj\Debug\ProjectEuler.Core.Test.dll
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\obj\Debug\ProjectEuler.Core.Test.pdb

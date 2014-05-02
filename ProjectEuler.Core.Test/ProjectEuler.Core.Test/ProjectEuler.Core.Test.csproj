@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BB0C8588-1CE4-4FA2-BB0D-BADF92CFEDE8}</ProjectGuid>
+    <ProjectGuid>{283C313C-2990-4EA7-BD7A-3C80FBDE1001}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjectEuler.Resolver</RootNamespace>
-    <AssemblyName>ProjectEuler.Resolver</AssemblyName>
+    <RootNamespace>ProjectEuler.Core.Test</RootNamespace>
+    <AssemblyName>ProjectEuler.Core.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -46,12 +46,12 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PE55Resolver.cs" />
+    <Compile Include="BigIntegerExtensionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProjectEuler1Resolver.cs" />
+    <Compile Include="PEMathTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjectEuler.Core\ProjectEuler.Core.csproj">
+    <ProjectReference Include="..\..\ProjectEuler.Core\ProjectEuler.Core.csproj">
       <Project>{798C923A-DF75-425D-AD9C-BB01654A08A0}</Project>
       <Name>ProjectEuler.Core</Name>
     </ProjectReference>
