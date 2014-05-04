@@ -23,6 +23,34 @@ namespace ProjectEuler.Core.Test
             Assert.AreEqual(-123456789, (new BigInteger(-987654321)).Reverse());
         }
 
+         [TestMethod]
+         public void IsPrimeTest() {
+
+             for (BigInteger i = 0; i < 100000; i++)
+             {
+                 Assert.AreEqual(i.IsPrime(), i.IsPrime(false), String.Format("Failed at {0}",i));
+             }
+         }
+
+         [TestMethod]
+         public void IsPrimeWithBoost() {
+             Boolean isPrime = false;
+             for (BigInteger i = 0; i < 10000000; i++)
+             {
+                 isPrime = i.IsPrime();
+             }
+         }
+
+         [TestMethod]
+         public void IsPrimeWithNoBoost()
+         {
+             Boolean isPrime = false;
+             for (BigInteger i = 0; i < 100000; i++)
+             {
+                 isPrime = i.IsPrime(false);
+             }
+         }
+
          #region ProjectEuler extensions tests
 
         [TestMethod]

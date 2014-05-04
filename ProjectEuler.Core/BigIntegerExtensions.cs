@@ -9,7 +9,27 @@ namespace ProjectEuler.Core
 {
     public static class BigIntegerExtensions
     {
-        public static bool IsPrime(this BigInteger bi) {
+        private static bool[] primePrecompute;
+
+        static BigIntegerExtensions() {
+            primePrecompute = new bool[100000];
+            for (int i = 0; i < 100000; i++)
+            {
+                bool isPrime = true;
+                int value = i * 2 + 3;
+
+                for (int div = 3; div <= Math.Sqrt(value); div+=2)
+                {
+                    if (value % div == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                primePrecompute[i] = isPrime;
+            }
+        }
+        public static bool IsPrime(this BigInteger bi, bool boostUp = true) {
             if (bi < 2)
             {
                 return false;
@@ -18,14 +38,43 @@ namespace ProjectEuler.Core
             {
                 return true;
             }
+            if (0 == bi % 2)
+            {
+                return false;
+            }
 
-            for (BigInteger i = 3; i < bi / 2; i+=2) {
-                if (0 == bi%i)
+            // For number under 100,000, speed up by looking up for static map
+            if (boostUp && bi < primePrecompute.Length)
+            {
+                int index = (int)bi;
+                return primePrecompute[(index >> 1) - 1];
+            }
+
+            if (boostUp &&
+                (bi < ((Int64)primePrecompute.Length)*((Int64)primePrecompute.Length))
+                ) // boost Way
+            {
+                Int64 bi64 = (Int64)bi;
+                Double sqrt = Math.Sqrt(bi64);
+                for (int i = 0, div = 3; div <= sqrt + 1; i++, div+=2)// for security, compute one more element after sqrt.
                 {
-                    return true;
+                    if (primePrecompute[i] && (bi % div == 0))
+                    {
+                        return false;
+                    }
                 }
             }
-            return false;
+            else // normal way
+            {
+                for (BigInteger i = 3; i < bi / 2; i += 2)
+                {
+                    if (0 == bi % i)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         /// <summary>
@@ -54,6 +103,10 @@ namespace ProjectEuler.Core
                 remain /= 10;
             }
             return reversed;
+        }
+
+        public static IEnumerable<BigInteger> Transform(this BigInteger origin, ITransformer transformer) {
+            throw new NotImplementedException();
         }
 
         #region ProjectEuler related functions
