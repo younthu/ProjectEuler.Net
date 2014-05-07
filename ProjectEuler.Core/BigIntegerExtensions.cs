@@ -145,6 +145,26 @@ namespace ProjectEuler.Core
             }
             return sum;
         }
+
+        public static Int32 DigitalNumber(this BigInteger value) {
+            if (value < 0)
+            {
+                value = -value;
+            }
+            if (value < 10)
+            {
+                return 1;
+            }
+
+            int result = 0;
+            while (value > 0)
+            {
+                result++;
+                value /= 10;
+            }
+
+            return result;
+        }
         #endregion
     }
 }

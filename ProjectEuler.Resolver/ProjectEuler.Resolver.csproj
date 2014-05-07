@@ -49,6 +49,7 @@
     <Compile Include="PE51Resolver.cs" />
     <Compile Include="PE55Resolver.cs" />
     <Compile Include="PE56Resolver.cs" />
+    <Compile Include="PE57Resolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProjectEuler1Resolver.cs" />
   </ItemGroup>
