@@ -5,3 +5,7 @@ C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin
 C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\obj\Debug\ProjectEuler.Core.Test.csprojResolveAssemblyReference.cache
 C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\obj\Debug\ProjectEuler.Core.Test.dll
 C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\obj\Debug\ProjectEuler.Core.Test.pdb
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\KwCombinatorics.dll
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\MathNet.Numerics.dll
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\MathNet.Numerics.pdb
+C:\sourcecode\ProjectEuler.Net\ProjectEuler.Core.Test\ProjectEuler.Core.Test\bin\Debug\MathNet.Numerics.xml

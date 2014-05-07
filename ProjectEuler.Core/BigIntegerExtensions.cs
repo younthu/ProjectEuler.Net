@@ -130,6 +130,21 @@ namespace ProjectEuler.Core
             return next.IsLychrel(--maxTries);
         }
 
+        public static Int32 DigitalSum(this BigInteger value) {
+            if (value < 0)
+            {
+                value = -value;
+            }
+
+            Int32 sum = 0;
+
+            while (value > 0)
+            {
+                sum += (int)(value % 10);
+                value /= 10;
+            }
+            return sum;
+        }
         #endregion
     }
 }

@@ -51,6 +51,30 @@ namespace ProjectEuler.Core.Test
              }
          }
 
+         [TestMethod]
+         public void BigPrimeNumberWithBoost() {
+             bool isPrime = false;
+             for (int i = 1; i < 10; i++)
+             {
+                 BigInteger bi = 1000000000 + i;
+                 isPrime &= bi.IsPrime();
+             }
+             Console.WriteLine(isPrime);
+         }
+
+         [TestMethod]
+         public void BigPrimeNumberWithNoBoost()
+         {
+             bool isPrime = false;
+             for (int i = 1; i < 10; i++)
+             {
+                 BigInteger bi = 1000000000 + i;
+                 isPrime &= bi.IsPrime(false);
+             }
+             Console.WriteLine(isPrime);
+         }
+
+
          #region ProjectEuler extensions tests
 
         [TestMethod]
