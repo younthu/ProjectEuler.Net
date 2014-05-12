@@ -105,6 +105,27 @@ namespace ProjectEuler.Core
             return reversed;
         }
 
+        /// <summary>
+        /// Join two big integers like strings
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static BigInteger Concatenate(this BigInteger left, BigInteger right) {
+            if (right < 0)
+            {
+                right = -right;
+            }
+
+            int digitNum = right.DigitalNumber();
+            left *= BigInteger.Pow(10, digitNum);
+            if (left < 0)
+            {
+                return -(-left + right);
+            }
+            return left + right;
+        }
+
         public static IEnumerable<BigInteger> Transform(this BigInteger origin, ITransformer transformer) {
             throw new NotImplementedException();
         }
